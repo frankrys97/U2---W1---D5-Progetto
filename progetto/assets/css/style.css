@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 20px;
+  background-color: #ffc017;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.nav-links button {
+  background-color: #191919;
+  color: white;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+header {
+  background-color: #ffc017;
+  text-align: start;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 40px;
+  padding-block: 93px;
+  width: 50%;
+}
+
+.title h1 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-size: 106px;
+  line-height: 95px;
+  letter-spacing: -0.5rem;
+}
+
+.title h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.title button {
+  background-color: #191919;
+  color: white;
+  padding: 11px 50px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.crazySVG {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+section {
+  padding: 40px 0 16px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.single-trend {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  column-gap: 30px;
+  width: 33%;
+}
+
+.trend-author {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.trend-author img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.trending > .single-trend:nth-child(n + 3) img {
+  border-radius: 10px;
+}
+
+.trend-author h5 {
+  font-size: 15px;
+}
+
+.trend-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.trend-body h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trend-body p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(121, 121, 121);
+}
+
+.number-trend {
+  font-size: 40px;
+  font-weight: 700;
+  color: #c6c6c6b6;
+}
+
+.trending {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.date {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.date img {
+  margin-left: 5px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+article {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 50px;
+}
+
+.single-article {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.article-author {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.article-author img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.article-author h5 {
+  font-size: 15px;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.article-body h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.article-body p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(121, 121, 121);
+}
+
+.article-image {
+  max-height: 100%;
+}
+
+.article-image img {
+  height: 100%;
+  width: 200px;
+}
+
+.date span {
+  background-color: #f2f2f1;
+  border-radius: 20px;
+  padding-inline: 10px;
+}
+
+.bookmark {
+  margin-left: auto;
+}
+
+.date-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-part {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  position: sticky;
+  top: 100px;
+}
+
+.right-part h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.discover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+
+.discover button {
+  background-color: #f2f2f1;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+/* Ho deciso di creare i bottoni del discover cosi come sono
+sul sito di Medium.com
+ */
+
+.anchor a {
+  text-decoration: none;
+  color: #2a8f26;
+  margin: 0px;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #f2f2f1;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+}
+
+.nav-scrolled {
+  background-color: white;
+}
+
+.nav-scrolled button {
+  background-color: #538724;
+}
+
+.nav-transition {
+  transition: background-color 0.3s ease-in-out;
+}
+
+
