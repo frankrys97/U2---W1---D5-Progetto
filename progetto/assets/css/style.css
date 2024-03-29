@@ -186,6 +186,7 @@ section {
   display: flex;
   justify-content: start;
   align-items: center;
+  column-gap: 5px;
 }
 
 .date img {
@@ -265,15 +266,13 @@ article {
   object-fit: cover;
 }
 
-.date span {
-  background-color: #f2f2f1;
-  border-radius: 20px;
-  padding-inline: 10px;
-}
-
 .date a {
   text-decoration: none;
   color: rgb(121, 121, 121);
+  background-color: #f2f2f1;
+  border-radius: 20px;
+  padding-inline: 10px;
+  font-size: 15px;
 }
 
 .date-article {
@@ -281,6 +280,10 @@ article {
   justify-content: space-between;
   align-items: flex-end;
 }
+
+section .date img {
+    margin-left: 0px;
+  }
 
 .right-part {
   width: 30%;
@@ -449,7 +452,7 @@ footer a {
 
 @media screen and (max-width: 680px) {
   .date-article p,
-  .date-article span {
+  .date a {
     font-size: 10px;
   }
 }
